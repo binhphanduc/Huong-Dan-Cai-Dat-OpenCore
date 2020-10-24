@@ -1,0 +1,28 @@
+language: node_js
+node_js: node
+cache:
+  npm: true
+jobs:
+  include:
+    - name: "Build and Push"
+      script: 
+      - npm run build
+      deploy:
+        local_dir: .vuepress/dist/
+        provider: pages
+        skip_cleanup: true
+        name: Travis Build Bot
+        keep_history: true
+        on:
+          branch: master
+        target_branch: gh-pages
+        # committer_from_gh: true
+        # allow_empty_commit: true
+        token:
+          secure: EHDOaf2otnG8ZzIt5W4iLizyu875Uonjj0ZsPjJrkB6IfgNZpl/OYLUWwrsYtpuYi0N+MRfhG2AmrLxADgvlOAiJ2CCwxYxrnMJGj5t1NH0g66LXM+ltOt1eJh/L7xDqi6g/CEObvUIR0pYy91NaCiCPjJE5Rl11fhiQtEDQlexlMq0y+DGFztN4SEFShzjRzBYqK28z+X9LGKzmD/fKLcgYwxADuryPc+H53au474JjgbDi4XWzEmSFYgh49vwnSpe8c5z0ugFAO/x9Vy0E5Rrfwe6YpVDmLsbxDC7keMJZVgReGxG9xDY7UT2FkIh8yaAqZbgu060k2iL60vA28xLQ1pnCb3jy0C8m7zHuXvynSmApE50aklZr6KgRdB01fw7zBoaBIDwkPfFYxn2rOoIc8yDa2iAGe0GR2oVm+gW9PguLRFhlr1RQvqPLXAUBHp05uw18AnNjZ24Nq1wjLCNWf7XC6eb8orSfmLHugK3htA7RxNq4n03dFhUT10dInrzr0bXXz7abBwn+4yEwzS6ipGQj/R5nv7mUz+DD+UZO1T54CHThpkL/SnoYNgBhJjlqrrKbIZCE7eeNGVzTc8BJx6s12SvX4YnJ3xjdTz3L8+dWFjZ0QIi63it/fPpAIpRSm84jr67KYddfGAkAm0YLyQM0vny7SyLP4/PszmI=
+    - name: "Lint"
+      script: 
+      - npm run lint-ci
+    - name: "Spellcheck"
+      script: 
+      - npm run spellcheck
