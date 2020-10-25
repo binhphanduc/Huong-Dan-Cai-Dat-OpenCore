@@ -3,7 +3,7 @@ const {
 } = require('../package')
 
 module.exports = {
-    title: 'OpenCore Install Guide',
+    title: 'Hướng Dẫn Cài Đặt OpenCore',
     head: [
         ['meta', {
             name: 'theme-color',
@@ -22,7 +22,7 @@ module.exports = {
             href: "/styles/website.css"
         },]
     ],
-    base: '/OpenCore-Install-Guide/',
+    base: '/Huong-Dan-Cai-Dat-OpenCore/',
 	
 	watch: {
 	    $page(newPage, oldPage) {
