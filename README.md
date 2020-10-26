@@ -1,26 +1,26 @@
 ---
 home: true
 heroImage: /dortania-logo-clear.png
-heroText: Dortania's OpenCore Install Guide
-actionText: Getting Started→
+heroText: Hướng dẫn cài đặt OpenCore
+actionText: Bắt đầu→
 actionLink: prerequisites.md
 
 meta:
 - name: description
-  content: Current supported version 0.6.2
+  content: Hỗ trợ tới phiên bản OpenCore 0.6.2
 ---
 
-# What is OpenCore and who is this guide for
+# OpenCore là gì và dành cho những ai ?
 
-OpenCore is what we refer to as a "boot loader" – this is a complex piece of software that we use to prepare our systems for macOS – specifically by injecting new data for macOS such as SMBIOS, ACPI tables and kexts. How this tool differs from others like Clover is that it has been designed with security and quality in mind, allowing us to use many security features found on real Macs, such as SIP and FileVault. A more in-depth look can be found here: [Why OpenCore over Clover and others](why-oc.md)
+OpenCore là một "boot loader" – gỉa lập thông tin của máy Mac như SMBIOS, ACPI và kext. Khác với Clover, nó cho phép chúng ta dùng những tính năng bảo mật như những máy Mac thật, như là SIP và FileVault. Xem bài viết chi tiết ở đây: [Why OpenCore over Clover and others](why-oc.md)
 
-This guide specifically focuses on two main things:
+Hướng dẫn này tập trung vào:
 
-* Installing macOS on an X86-based PC
-* Teaching you what makes your Hack work
+* Cài macOS trên X86-based PC
+* Chỉ bạn cách làm cho bản hack hoạt động
 
-Because of this, you will be expected to read, learn and even use Google. This is not a simple one-click install setup.
+Bởi thế cho nên, bạn phải đọc kỹ và biết dùng Google.
 
-Please remember that OpenCore is still new and currently in beta. While quite stable, and arguably much more stable than Clover in pretty much every way, it is still being frequently updated, so chunks of configuration change quite often (i.e. new quirks replacing old ones).
+Nhớ là OpenCore vẫn đang ở giai đoạn beta.
 
-Lastly, those having issues can visit both the [r/Hackintosh subreddit](https://www.reddit.com/r/hackintosh/) and [r/Hackintosh Discord](https://discord.gg/u8V7N5C) for more help.
+Cuối cùng, có vấn đề gì thì vào [r/Hackintosh subreddit](https://www.reddit.com/r/hackintosh/) và [r/Hackintosh Discord](https://discord.gg/u8V7N5C) để nhận trợ giúp.
