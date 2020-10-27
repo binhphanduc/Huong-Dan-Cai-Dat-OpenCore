@@ -1,16 +1,14 @@
-# Why OpenCore over Clover and others
+# Tại sao nên dùng OpenCore thay vì Clover
 
-* Supported version: 0.6.2
-
-This section contains a brief rundown as to why the community has been transitioning over to OpenCore, and aims to dispel a few common myths in the community. Those who just want a macOS machine can skip this page.
+* Hỗ trợ phiên bản: 0.6.2
 
 * [Why OpenCore over Clover and others](#why-opencore-over-clover-and-others)
-  * OpenCore features
-  * Software support
+  * Những tính năng của OpenCore
+  * Phần mềm hỗ trợ
   * Kext injection
 * [OpenCore's shortcomings](#opencores-shortcomings)
 * [Common Myths](#common-myths)
-  * Is OpenCore unstable as it's a beta?
+  * OpenCore có không ổn định vì đang còn ở giai đoạn beta?
   * Does OpenCore always inject SMBIOS and ACPI data into other OSes?
   * Does OpenCore require a fresh install?
   * Does OpenCore only support limited versions of macOS?
